@@ -1,4 +1,4 @@
-package com.teamsparta.assignment2.domain.user.dto
+package com.teamsparta.assignment.dto
 
 import jakarta.validation.constraints.Pattern
 import jakarta.validation.constraints.Size

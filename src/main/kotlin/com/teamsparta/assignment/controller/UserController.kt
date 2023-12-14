@@ -1,9 +1,9 @@
-package com.teamsparta.assignment2.domain.user.controller
+package com.teamsparta.assignment.controller
 
-import com.teamsparta.assignment2.domain.user.dto.LoginRequest
-import com.teamsparta.assignment2.domain.user.dto.SignUpRequest
-import com.teamsparta.assignment2.domain.user.dto.UserResponse
-import com.teamsparta.assignment2.domain.user.service.UserService
+import com.teamsparta.assignment.dto.LoginRequest
+import com.teamsparta.assignment.dto.SignUpRequest
+import com.teamsparta.assignment.dto.UserResponse
+import com.teamsparta.assignment.service.UserService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

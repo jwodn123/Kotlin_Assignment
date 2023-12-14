@@ -1,8 +1,6 @@
-package com.teamsparta.assignment.domain.post.model
+package com.teamsparta.assignment.model
 
-import com.teamsparta.assignment.domain.user.model.User
-import com.teamsparta.assignment2.domain.post.dto.PostResponse
-import com.teamsparta.assignment2.domain.user.dto.UserResponse
+import com.teamsparta.assignment.dto.PostResponse
 import jakarta.persistence.*
 import java.time.LocalDateTime
 

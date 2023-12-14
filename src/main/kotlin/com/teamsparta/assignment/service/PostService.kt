@@ -1,8 +1,8 @@
-package com.teamsparta.assignment2.domain.post.service
+package com.teamsparta.assignment.service
 
-import com.teamsparta.assignment2.domain.post.dto.CreatePostRequest
-import com.teamsparta.assignment2.domain.post.dto.PostResponse
-import com.teamsparta.assignment2.domain.post.dto.UpdatePostRequest
+import com.teamsparta.assignment.dto.CreatePostRequest
+import com.teamsparta.assignment.dto.PostResponse
+import com.teamsparta.assignment.dto.UpdatePostRequest
 
 interface PostService {
 

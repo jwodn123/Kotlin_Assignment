@@ -1,13 +1,12 @@
-package com.teamsparta.assignment2.domain.post.service
+package com.teamsparta.assignment.service
 
-import com.teamsparta.assignment.domain.post.model.Post
-import com.teamsparta.assignment.domain.post.model.toResponse
-import com.teamsparta.assignment.domain.post.repository.PostRepository
-import com.teamsparta.assignment.domain.user.model.User
-import com.teamsparta.assignment.domain.user.repository.UserRepository
-import com.teamsparta.assignment2.domain.post.dto.CreatePostRequest
-import com.teamsparta.assignment2.domain.post.dto.PostResponse
-import com.teamsparta.assignment2.domain.post.dto.UpdatePostRequest
+import com.teamsparta.assignment.model.Post
+import com.teamsparta.assignment.model.toResponse
+import com.teamsparta.assignment.repository.PostRepository
+import com.teamsparta.assignment.repository.UserRepository
+import com.teamsparta.assignment.dto.CreatePostRequest
+import com.teamsparta.assignment.dto.PostResponse
+import com.teamsparta.assignment.dto.UpdatePostRequest
 import com.teamsparta.courseregistration.domain.exception.ModelNotFoundException
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service

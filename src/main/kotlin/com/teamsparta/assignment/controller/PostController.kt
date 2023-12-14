@@ -1,9 +1,9 @@
-package com.teamsparta.assignment2.domain.post.controller
+package com.teamsparta.assignment.controller
 
-import com.teamsparta.assignment2.domain.post.dto.CreatePostRequest
-import com.teamsparta.assignment2.domain.post.dto.PostResponse
-import com.teamsparta.assignment2.domain.post.dto.UpdatePostRequest
-import com.teamsparta.assignment2.domain.post.service.PostService
+import com.teamsparta.assignment.dto.CreatePostRequest
+import com.teamsparta.assignment.dto.PostResponse
+import com.teamsparta.assignment.dto.UpdatePostRequest
+import com.teamsparta.assignment.service.PostService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

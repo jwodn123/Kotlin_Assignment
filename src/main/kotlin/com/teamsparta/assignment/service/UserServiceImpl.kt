@@ -1,12 +1,11 @@
-package com.teamsparta.assignment2.domain.user.service
+package com.teamsparta.assignment.service
 
-import com.teamsparta.assignment.domain.user.model.User
-import com.teamsparta.assignment.domain.user.model.toResponse
-import com.teamsparta.assignment.domain.user.repository.UserRepository
-import com.teamsparta.assignment2.domain.user.dto.LoginRequest
-import com.teamsparta.assignment2.domain.user.dto.SignUpRequest
-import com.teamsparta.assignment2.domain.user.dto.UserResponse
-import org.springframework.http.ResponseEntity
+import com.teamsparta.assignment.model.User
+import com.teamsparta.assignment.model.toResponse
+import com.teamsparta.assignment.repository.UserRepository
+import com.teamsparta.assignment.dto.LoginRequest
+import com.teamsparta.assignment.dto.SignUpRequest
+import com.teamsparta.assignment.dto.UserResponse
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 

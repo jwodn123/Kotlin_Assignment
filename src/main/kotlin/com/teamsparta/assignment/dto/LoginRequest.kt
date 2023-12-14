@@ -1,4 +1,4 @@
-package com.teamsparta.assignment2.domain.user.dto
+package com.teamsparta.assignment.dto
 
 data class LoginRequest(
     val username: String,

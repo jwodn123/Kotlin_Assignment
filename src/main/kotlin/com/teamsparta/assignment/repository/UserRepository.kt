@@ -1,6 +1,6 @@
-package com.teamsparta.assignment.domain.user.repository
+package com.teamsparta.assignment.repository
 
-import com.teamsparta.assignment.domain.user.model.User
+import com.teamsparta.assignment.model.User
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface UserRepository: JpaRepository<User, Long> {

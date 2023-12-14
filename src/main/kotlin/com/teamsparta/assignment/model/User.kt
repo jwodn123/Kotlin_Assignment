@@ -1,7 +1,6 @@
-package com.teamsparta.assignment.domain.user.model
+package com.teamsparta.assignment.model
 
-import com.teamsparta.assignment.domain.post.model.Post
-import com.teamsparta.assignment2.domain.user.dto.UserResponse
+import com.teamsparta.assignment.dto.UserResponse
 import jakarta.persistence.*
 
 @Entity
