@@ -17,6 +17,7 @@ class UserController(private val userService: UserService) {
     // 회원가입
     @PostMapping("/signup")
     fun signUp(@RequestBody @Valid signUpRequest: SignUpRequest): ResponseEntity<UserResponse> {
+
         return ResponseEntity
             .status(HttpStatus.OK)
             .body(userService.signUp(signUpRequest))
@@ -25,6 +26,7 @@ class UserController(private val userService: UserService) {
     // 로그인
     @PostMapping("/login")
     fun login(@RequestBody loginRequest: LoginRequest): ResponseEntity<UserResponse> {
+
         return ResponseEntity
             .status(HttpStatus.OK)
             .body(userService.login(loginRequest))
