@@ -1,6 +1,6 @@
 package com.teamsparta.courseregistration.domain.exception
 
-import com.teamsparta.courseregistration.domain.exception.dto.ErrorResponse
+import com.teamsparta.assignment.dto.ErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler

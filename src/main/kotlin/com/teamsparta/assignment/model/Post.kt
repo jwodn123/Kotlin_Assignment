@@ -18,8 +18,8 @@ class Post(
     val createDt: LocalDateTime = LocalDateTime.now(),
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    val user: User
+    @JoinColumn(name = "member_id")
+    val member: Member
 
 ) {
     @Id
@@ -31,7 +31,7 @@ fun Post.toResponse(): PostResponse {
     return PostResponse(
         id = id!!,
         title = title,
-        username = user.username,
+        username = member.username,
         content = content,
         createDt = createDt
     )

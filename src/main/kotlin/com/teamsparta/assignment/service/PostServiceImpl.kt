@@ -30,13 +30,13 @@ class PostServiceImpl(
     @Transactional
     override fun createPost(request: CreatePostRequest): PostResponse {
 
-        val user = memberRepository.findByAccount(request.username)
+        val member = memberRepository.findByUsername(request.username)
             ?: throw RuntimeException("사용자를 찾을 수 없습니다")
 
         return postRepository.save(
             Post(
                 title = request.title,
-                user = user,
+                member = member,
                 content = request.content,
             )
         ).toResponse()

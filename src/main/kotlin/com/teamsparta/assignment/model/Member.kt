@@ -16,7 +16,11 @@ class Member(
     var password: String,
 
     @Enumerated(EnumType.STRING)
-    val type: MemberType = MemberType.USER
+    val type: MemberType = MemberType.USER,
+
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+    val posts: MutableList<Post> = mutableListOf()
+
 ) {
     val createdAt: LocalDateTime = LocalDateTime.now()
     @Id

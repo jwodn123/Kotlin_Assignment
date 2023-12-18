@@ -25,7 +25,7 @@ class SignService(
 
     @Transactional
     fun signIn(request: SignInRequest): SignInResponse {
-        val member = memberRepository.findByAccount(request.username)
+        val member = memberRepository.findByUsername(request.username)
             ?.takeIf { encoder.matches(request.password, it.password) } ?: throw IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.")
         val token = tokenProvider.createToken("${member.id}:${member.type}")
         return SignInResponse(member.type, token)
