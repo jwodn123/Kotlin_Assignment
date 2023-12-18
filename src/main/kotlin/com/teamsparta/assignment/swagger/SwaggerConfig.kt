@@ -1,4 +1,4 @@
-package com.teamsparta.assignment.config
+package com.teamsparta.assignment.swagger
 
 import io.swagger.v3.oas.models.Components
 import io.swagger.v3.oas.models.OpenAPI

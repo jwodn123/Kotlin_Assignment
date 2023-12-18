@@ -3,7 +3,7 @@ package com.teamsparta.assignment.service
 import com.teamsparta.assignment.model.Post
 import com.teamsparta.assignment.model.toResponse
 import com.teamsparta.assignment.repository.PostRepository
-import com.teamsparta.assignment.repository.UserRepository
+import com.teamsparta.assignment.repository.MemberRepository
 import com.teamsparta.assignment.dto.CreatePostRequest
 import com.teamsparta.assignment.dto.PostResponse
 import com.teamsparta.assignment.dto.UpdatePostRequest
@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional
 @Service
 class PostServiceImpl(
     private val postRepository: PostRepository,
-    private val userRepository: UserRepository
+    private val memberRepository: MemberRepository
 ) : PostService {
 
     override fun getAllPostList(): List<PostResponse> {
@@ -30,7 +30,7 @@ class PostServiceImpl(
     @Transactional
     override fun createPost(request: CreatePostRequest): PostResponse {
 
-        val user = userRepository.findByUsername(request.username)
+        val user = memberRepository.findByAccount(request.username)
             ?: throw RuntimeException("사용자를 찾을 수 없습니다")
 
         return postRepository.save(
