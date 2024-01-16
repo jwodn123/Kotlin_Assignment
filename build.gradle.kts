@@ -39,6 +39,11 @@ dependencies {
 	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.2")
 	runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.2")
 
+	// 로그백 의존성
+	implementation("ca.pjer:logback-awslogs-appender:1.6.0")
+	// xml에서의 <if> 문 사용
+	implementation("org.codehaus.janino:janino:3.1.7")
+
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

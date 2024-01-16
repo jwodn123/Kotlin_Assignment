@@ -4,6 +4,7 @@ import com.teamsparta.assignment.dto.CreatePostRequest
 import com.teamsparta.assignment.dto.PostResponse
 import com.teamsparta.assignment.dto.UpdatePostRequest
 import com.teamsparta.assignment.service.PostService
+import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -12,9 +13,12 @@ import org.springframework.web.bind.annotation.*
 @RestController
 class PostController(private val postService: PostService) {
 
+    private val log = LoggerFactory.getLogger(PostController::class.java)
+
     // 게시글 전체 조회
     @GetMapping
     fun getPostList(): ResponseEntity<List<PostResponse>> {
+        log.error("게시글 전체 조회 실패")
         return ResponseEntity
             .status(HttpStatus.OK)
             .body(postService.getAllPostList())

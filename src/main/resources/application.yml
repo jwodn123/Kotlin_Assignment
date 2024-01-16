@@ -1,1 +1,13 @@
+server:
+  port: 8080 # 내장 톰캣 포트번호
+
+spring:
+  profiles:
+    active: prod #dev, prod 로 변경 가능
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAZHKMFZANVDBFLQWI
+      secretKey: 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
 
